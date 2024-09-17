@@ -6,6 +6,8 @@ from resnet_with_mix_style import resnet18_with_mix_style
 from models import Classifier
 from torch.utils.data import DataLoader
 from tqdm import tqdm
+import torch.nn.functional as F
+
 
 def FedAvg(w, weight_avg=None):
     """
