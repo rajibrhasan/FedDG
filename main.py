@@ -11,7 +11,7 @@ import argparse
 #########################Arguments#########################################
 
 parser = argparse.ArgumentParser(description='Federated Domain Generalization')
-parser.add_argument('root', type = str, help = "Root data directory")
+parser.add_argument('--root', type = str, help = "Root data directory")
 args1 = parser.parse_args()
 
 args.root = args1._get_args('root')
