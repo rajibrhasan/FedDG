@@ -1,9 +1,10 @@
+import torch 
+
 class Args:
     pass
 
 args = Args()
 
-args.root = '/teamspace/studios/this_studio/pacs/pacs_data/pacs_data'
 args.src = ['cartoon', 'photo', 'sketch']
 args.target = 'art_painting'
 args.n_src = 3

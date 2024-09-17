@@ -6,8 +6,17 @@ from dataset import *
 from torch.utils.data import DataLoader
 import os
 import gc
+import argparse
+
+#########################Arguments#########################################
+
+parser = argparse.ArgumentParser(description='Federated Domain Generalization')
+parser.add_argument('root', type = str, help = "Root data directory")
+args.root = parser.parse_args().root
 
 ###############################Data########################################
+
+
 
 train_dls = []
 test_dls = []
