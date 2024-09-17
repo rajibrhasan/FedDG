@@ -4,6 +4,7 @@ import copy
 import torch 
 from torch import nn, optim
 import torch.nn.functional as F
+from tqdm import tqdm
 
 class Client(object):
     def __init__(self, name, model, classifier, local_bs, local_ep, lr, momentum, weight_decay, device, 
